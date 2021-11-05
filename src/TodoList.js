@@ -12,7 +12,8 @@ class TodoList extends Component {
   }
   add = (e) => {
     let input = document.getElementById("input");
-    if ((e.key === "Enter" || e.target.tagName === "BUTTON") && e.target.value !== "") {
+    if ((e.key === "Enter" && e.target.value !== "") || (e.target.tagName === "BUTTON" && input.value !== "")) {
+      console.log("ok");
       this.setState({
         todo: "",
         todos: [...this.state.todos, input.value]
