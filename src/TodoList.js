@@ -12,7 +12,7 @@ class TodoList extends Component {
   }
   add = (e) => {
     let input = document.getElementById("input");
-    if (e.key === "Enter" || e.target.tagName === "BUTTON") {
+    if ((e.key === "Enter" || e.target.tagName === "BUTTON") && e.target.value !== "") {
       this.setState({
         todo: "",
         todos: [...this.state.todos, input.value]
