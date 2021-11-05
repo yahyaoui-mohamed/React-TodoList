@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+body{
+  background: linear-gradient(to left,#2980b9,#58c6fd);
+}
+*{
+  font-family: Montserrat;
+
+}
+.todo-list{
+  text-align: center;
+  width:400px;
+  margin:auto;
+}
+
+.todo-list h1{
+  color:#fff;
+  font-weight:400;
+}
+
+.todo-list input{
+  border:none;
+  outline: none;
+  padding:10px 35px;
+  padding-left:5px;
+  font-family:Arial;
+  font-size:18px;
+  border-radius:2px;
+  margin-right:5px;
+  width:257px;
+  font-family: Montserrat;
+}
+
+.todo-list button{
+  font-size:18px;
+  padding:10px 30px;
+  border-radius:2px;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  background-color:#3c6ffb;
+  color:#fff;
+}
+
+.todo-list .todo-items{
+  background-color: #fff;
+  margin:auto;
+  padding:5px 20px;
+  margin:30px 0;
+  border-radius:2px;
+}
+
+.todo-list .todo-items .todo-item{
+  border-bottom: 1px solid #ccc;
+  text-align:left;
+  padding:10px 5px;
+  display:flex;
+}
+.todo-list .todo-items .todo-item div{
+  width:100%
+}
+
+.todo-list .todo-items .todo-item:not(last-child){
+  margin-bottom:25px;
+}
+
+.finished{
+  text-decoration: line-through;
+}
+
+.todo-list .todo-items .todo-item span{
+  justify-content: flex-end;
+}
